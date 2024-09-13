@@ -1,5 +1,17 @@
 ---
-## [unreleased]
+## 3.0.0 - 2024-09-13
+
+
+### Features
+
+
+- New python 3.0 
+  - **BREAKING**: new python 3.0
+
+
+
+
+## 2.1.0 - 2024-09-13
 
 
 ### Features
