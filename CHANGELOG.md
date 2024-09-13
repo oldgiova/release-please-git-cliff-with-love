@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/oldgiova/release-please-git-cliff-with-love/compare/v1.0.0...v1.1.0) (2024-09-13)
+
+
+### Features
+
+* added python feature 1.1 ([602e52b](https://github.com/oldgiova/release-please-git-cliff-with-love/commit/602e52b575bbc16157d15c61799b253b9d21ad55))
+
 ## 1.0.0 (2024-09-13)
 
 
