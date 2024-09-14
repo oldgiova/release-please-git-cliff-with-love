@@ -32,6 +32,9 @@ body = """
             {% raw %}  {% endraw %}- **BREAKING**: {{commit.breaking_description}}
             {% endif -%}
         {% endif -%}
+            {% if commit.body -%}
+            {% raw %}  {% endraw %}{{commit.body}}
+            {% endif -%}
     {% endfor -%}
 {% endmacro input %}\
 
