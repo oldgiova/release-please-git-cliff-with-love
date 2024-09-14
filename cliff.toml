@@ -64,17 +64,17 @@ filter_unconventional = true
 split_commits = false
 # regex for parsing and grouping commits
 commit_parsers = [
-    { message = "^feat", group = "Features" },
-    { message = "^fix", group = "Bug Fixes" },
-    { message = "^doc", group = "Documentation" },
-    { message = "^perf", group = "Performance" },
-    { message = "^refactor", group = "Refactor" },
-    { message = "^style", group = "Styling" },
-    { message = "^test", group = "Testing" },
+    { message = "^feat", group = "<!-- 0 -->🚀 Features" },
+    { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
+    { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
+    { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
+    { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
+    { message = "^style", group = "<!-- 5 -->🎨 Styling" },
+    { message = "^test", group = "<!-- 6 -->🧪 Testing" },
     { message = ".*Changelog: None", skip = true },
-    { message = "^chore: bump", group = "Dependabot bumps" },
-    { message = "^chore", skip = true },
-    { body = ".*security", group = "Security" },
+    { message = "^chore: bump", group = "<!-- 7 -->🛡️ Security" },
+    { message = "^chore|^ci", skip = true },
+    { body = ".*security", group = "<!-- 7 -->🛡️ Security" },
 ]
 link_parsers = [
     { pattern = "MEN-(\\d+)", href = "https://northerntech.atlassian.net/browse/MEN-$1" },
