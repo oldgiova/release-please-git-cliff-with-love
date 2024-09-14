@@ -33,7 +33,9 @@ body = """
             {% endif -%}
         {% endif -%}
             {% if commit.body -%}
-            {% raw %}  {% endraw %}{{commit.body | replace(from="\n", to=" ")}}
+              {% for line in commit.body | split(pat="\n") -%}
+                {% raw %}  {% endraw %}{{ line }}
+              {% endfor -%}
             {% endif -%}
     {% endfor -%}
 {% endmacro input %}\
